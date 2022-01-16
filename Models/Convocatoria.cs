@@ -11,7 +11,7 @@ namespace WebAppNetCore.Models
         public int ConvocatoriaID { get; set; }
 
         [Required]
-        public TipoConvocatoria? Tipo { get; set; }
+        public TipoConvocatoria? TipoConvocatoria { get; set; }
 
         [Required]
         public int? Mes { get; set; }

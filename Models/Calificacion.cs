@@ -14,12 +14,15 @@ namespace WebAppNetCore.Models
         public int ConvocatiriaID { get; set; }
         public Convocatoria? Convocatoria { get; set; }
 
-        [ForeignKey("Matricula")]
-        public int MatriculaID { get; set; }
-        public Matricula? Matricula { get; set; }
+        [ForeignKey("MatriculaAsignatura")]
+        public int MatriculaAsignaturaID { get; set; }
+        public MatriculaAsignatura? MatriculaAsignatura { get; set; }
 
+        [Required]
         public int? NotaNumerica { get; set; }
-        public string? NotaCategorica { get; set; }
 
+        [Required]
+        [MaxLength(20)]
+        public string? NotaCategorica { get; set; }
     }
 }

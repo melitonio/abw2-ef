@@ -30,9 +30,12 @@ namespace WebAppNetCore.Models
         public DateTime? FechaNacimiento { get; set; }
 
         [Required]
+        [MaxLength(30)]
         public string? Telefono { get; set; }
 
         [Required]
+        [DataType(DataType.EmailAddress)]
+        [MaxLength(50)]
         public string? Email { get; set; }
 
         public int? Edad => DateTime.Now.Year - FechaNacimiento?.Year;

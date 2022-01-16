@@ -16,11 +16,13 @@ namespace WebAppNetCore
             optionsBuilder.UseNpgsql(connectionString, op => op.EnableRetryOnFailure(10, TimeSpan.FromSeconds(30), null));
         }
 
-        public DbSet<Alumno>? Alumnos { get; set; }
         public DbSet<Carrera>? Carreras { get; set; }
         public DbSet<Asignatura>? Asignaturas { get; set; }
+        public DbSet<Alumno>? Alumnos { get; set; }
+        public DbSet<CursoAcademico>? CursoAcademicos { get; set; }
         public DbSet<Convocatoria>? Convocatorias { get; set; }
         public DbSet<Matricula>? Matriculas { get; set; }
+        public DbSet<MatriculaAsignatura>? MatriculaAsignaturas { get; set; }
         public DbSet<Calificacion>? Calificaciones { get; set; }
     }
 }

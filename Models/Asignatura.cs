@@ -34,5 +34,6 @@ namespace WebAppNetCore.Models
         [Required]
         public Carracter? Carracter { get; set; }
     }
+    
     public enum Carracter { Basica, Obligatoria, Optativa }
 }
