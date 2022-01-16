@@ -102,7 +102,7 @@ namespace WebAppNetCore
                     Nombre ="Ignacio",
                     Apellidos = "Ndong Nchama",
                     Sexo = TSexo.Hombre,
-                    FechaNacimiento = new DateTime(1986, 7, 14).ToUniversalTime(),
+                    FechaNacimiento = new DateTime(1986, 7, 14,0,0,0,DateTimeKind.Utc),
                     Telefono = "222111111",
                     Email = "ignacio@unge.gq"
                 }

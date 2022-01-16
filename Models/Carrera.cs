@@ -34,7 +34,5 @@ namespace WebAppNetCore.Models
         public int? Cursos { get; set; }
 
         public IList<Asignatura>? Asignaturas { get; set; }
-
-        public IList<Alumno>? Alumnos { get; set; }
     }
 }
