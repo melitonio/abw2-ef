@@ -8,7 +8,7 @@ namespace WebAppNetCore
         private readonly string _host = "localhost";
         private readonly string _database = "abw2-2021-2022";
         private readonly string _userName = "postgres";
-        private const string _password = "malabo-2530";
+        private readonly string _password = "malabo-2530";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
